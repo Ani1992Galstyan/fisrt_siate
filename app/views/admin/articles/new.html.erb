@@ -1,0 +1,16 @@
+<h2>New articel</h2>
+<div class="container">
+	<%= form_for :article, url: admin_articles_path do |f| %>
+		<div class="form-group">
+			<%= f.label :title %>
+			<%= f.text_field :title, class: 'form-control' %>
+		</div>
+		<div class="form-group">
+			<%= f.label :body %>
+			<%= f.text_area :body, class: 'form-control' %>
+		</div>
+		<div class="form-group">
+			<%= f.submit  class: 'btn btn-success' %>
+		</div>
+	<% end %>
+</div>

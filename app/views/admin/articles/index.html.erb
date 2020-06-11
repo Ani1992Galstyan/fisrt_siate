@@ -1,0 +1,4 @@
+<h1>All articels</h1>
+<% @articles.each do |article| %>
+	<%= link_to  article.title, admin_article_path(article) %>
+<% end %>

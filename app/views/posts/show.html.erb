@@ -1,0 +1,4 @@
+<p><%= @post.title %></p>
+<p><%= @post.body %></p>
+<p><%= @post.created_at %></p>
+<%= link_to 'Delete post', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
