@@ -32,6 +32,10 @@ class Admin::ArticlesController < ApplicationController
 		end	
 	end
 
+	def destroy
+		
+	end
+
 	private
 	def find_article
       @article = Article.find(params[:id])
